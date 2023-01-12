@@ -85,6 +85,9 @@ main article .product-description button:hover {
 }
 
 @media screen and (max-width: 610px) {
+  main {
+    margin: 0 4vw;
+  }
   main article {
     grid-template-columns: 1fr;
   }

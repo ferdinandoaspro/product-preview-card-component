@@ -103,6 +103,7 @@ main {
 
 @media screen and (max-width: 610px) {
     main {
+        margin: 0 4vw;
         
         article {    
             grid-template-columns: 1fr;
