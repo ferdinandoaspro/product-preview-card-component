@@ -44,42 +44,58 @@ main {
         .product-description {
             display: flex;
             flex-direction: column;
-            padding: 2.2em;
+            padding: 2.5em;
             gap: 1.5em;
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             color: $dark-grayish-blue;
 
+            .product-type {
+                letter-spacing: 0.35em;
+            }
+
             h1 {
-                font-size: 2.5em;
+                font-size: 2.3em;
                 font-family: "Fraunces";
-                font-weight: 700;
                 color: $very-dark-blue;
                 line-height: 1em;
             }
 
             .summary {
-                line-height: 2em;
+                line-height: 1.6em;
             }
 
             .prices {
                 display: flex;
                 align-items: center;
-                gap: 2em;
+                gap: 1.6em;
+                padding: 0.1em 0;
                 .new-price {
-                    font-size: 2em;
+                    font-size: 2.3em;
                     color: $dark-cyan;
                     font-family: "Fraunces";
-                    font-weight: 700;
+                }
+                .old-price {
+                    text-decoration: line-through;
                 }
             }
 
             button {
+                display: flex;
+                justify-content: center;
                 background-color: $dark-cyan;
                 color: $white;
+                font-weight: 700;
+                font-size: 1em;
+                gap: 0.6em;
                 border: none;
-                padding: 1em;
+                padding: 1.1em;
                 border-radius: 5px;
+            }
+
+            button:hover {
+                background-color:rgb(23, 68, 51);
+                cursor: pointer;
             }
         }
     }

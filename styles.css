@@ -37,39 +37,53 @@ main article {
 main article .product-description {
   display: flex;
   flex-direction: column;
-  padding: 2.2em;
+  padding: 2.5em;
   gap: 1.5em;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228deg, 12%, 48%);
 }
+main article .product-description .product-type {
+  letter-spacing: 0.35em;
+}
 main article .product-description h1 {
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-family: "Fraunces";
-  font-weight: 700;
   color: hsl(212deg, 21%, 14%);
   line-height: 1em;
 }
 main article .product-description .summary {
-  line-height: 2em;
+  line-height: 1.6em;
 }
 main article .product-description .prices {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 1.6em;
+  padding: 0.1em 0;
 }
 main article .product-description .prices .new-price {
-  font-size: 2em;
+  font-size: 2.3em;
   color: hsl(158deg, 36%, 37%);
   font-family: "Fraunces";
-  font-weight: 700;
+}
+main article .product-description .prices .old-price {
+  text-decoration: line-through;
 }
 main article .product-description button {
+  display: flex;
+  justify-content: center;
   background-color: hsl(158deg, 36%, 37%);
   color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 1em;
+  gap: 0.6em;
   border: none;
-  padding: 1em;
+  padding: 1.1em;
   border-radius: 5px;
+}
+main article .product-description button:hover {
+  background-color: rgb(23, 68, 51);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
