@@ -85,7 +85,7 @@ main article .product-description button:hover {
 }
 
 @media screen and (max-width: 610px) {
-  article {
+  main article {
     grid-template-columns: 1fr;
   }
 }

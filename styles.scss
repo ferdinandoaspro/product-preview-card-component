@@ -102,8 +102,10 @@ main {
 }
 
 @media screen and (max-width: 610px) {
-
-    article {    
-        grid-template-columns: 1fr;
-    }
+    main {
+        
+        article {    
+            grid-template-columns: 1fr;
+        }
+   }
 }
