@@ -30,12 +30,11 @@ body {
 }
 
 main {
-    max-width: 600px;
+    max-width: 610px;
     min-width: 300px;
     background-color: $white;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 0.5em;
 
     article {
         display: grid;
@@ -45,7 +44,7 @@ main {
             display: flex;
             flex-direction: column;
             padding: 2.5em;
-            gap: 1.5em;
+            gap: 1.75em;
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
             color: $dark-grayish-blue;
@@ -69,12 +68,13 @@ main {
                 display: flex;
                 align-items: center;
                 gap: 1.6em;
-                padding: 0.1em 0;
+
                 .new-price {
                     font-size: 2.3em;
                     color: $dark-cyan;
                     font-family: "Fraunces";
                 }
+
                 .old-price {
                     text-decoration: line-through;
                 }
@@ -86,11 +86,11 @@ main {
                 background-color: $dark-cyan;
                 color: $white;
                 font-weight: 700;
-                font-size: 1em;
+                font-size: inherit;
                 gap: 0.6em;
-                border: none;
                 padding: 1.1em;
                 border-radius: 5px;
+                border: none;
             }
 
             button:hover {
@@ -98,5 +98,12 @@ main {
                 cursor: pointer;
             }
         }
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    article {    
+        grid-template-columns: 1fr;
     }
 }
